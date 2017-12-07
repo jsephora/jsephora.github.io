@@ -1,0 +1,55 @@
+// MAIN CUSTOM CSS
+
+// SASS Partial imports
+
+@import 'variables';
+@import 'style-blue';
+
+
+// Custom styling overrides
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: $font-header;
+}
+
+body {
+    font-family: $font-body;
+}
+
+#footer p {
+    font-family: $font-body;
+}
+
+.navbar-default .navbar-brand {
+    color: $brand-primary;
+}
+
+.navbar-brand, .navbar {
+    font-family: $font-header;
+}
+
+.navbar ul.nav > li.active > a, .navbar ul.nav > li.open > a {
+    border-top-color: $brand-secondary;
+}
+.navbar ul.nav > li > a:hover {
+    border-top-color: $brand-tertiary;
+}
+
+.text-gradient {
+  background: $brand-secondary;
+  color: #fff;
+  background-image: -webkit-linear-gradient(top, $brand-primary 0%, $brand-secondary 100%);
+  background-image: linear-gradient(to bottom, $brand-primary 0%, $brand-secondary 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff14559e', endColorstr='#ff4687d0', GradientType=0);
+}
+
+.services .icon {
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 5px 5px 0 $brand-primary;
+}
+
+#filter li {
+    font-family: $font-header;
+}
